@@ -1,0 +1,25 @@
+n = 1
+par = 0
+imp = 0
+soma = 0
+somaimp = 0
+
+while n != 11:
+    num = int(input(f'digite {n}° numero '))
+    n += 1
+    
+    if num % 2 == 0:
+        par += 1
+        soma += num
+        
+    else:
+        imp += 1
+        somaimp += num
+        
+print(f'{par} numeros pares')
+
+print(f'{imp} numeros impares')
+
+print(f'a soma dos pares é {soma} ')
+
+print(f'a media dos impares é {somaimp / imp}')
