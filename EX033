@@ -1,0 +1,21 @@
+n1 = int(input('digite um numero '))
+n2 = int(input('digite outro numero '))
+n3 = int(input('digite um terseiro numero '))
+me = n1
+
+if n2 < n1 and n2 < n3:
+    me = n2
+
+if n3 < n1 and n3 < n2:
+    me = n3
+
+ma = n1
+
+if n2 > n1 and n2 > n3:
+    ma = n2
+
+if n3 > n1 and n3 > n2:
+    ma = n3
+
+print(f'o menor valor é {me}')
+print(f'o maior valor é {ma}')
