@@ -1,0 +1,17 @@
+print('---imprestimo bancario para compra de uma casa---')
+
+casa = float(input('qual o valor da casa? R$'))
+salario = float(input('qual o salario do comprador? R$'))
+anos = float(input('em quantos anos sera percelado? '))
+
+prestacao = casa / (anos * 12)
+
+print(f'para paga um casa de {casa} com um salario de {salario} em {anos} a prestação sera de {prestacao:.2f}')
+
+minimo = (30 / 100) * prestacao
+
+if prestacao <= minimo:
+    print('o iprestimo foi aprovado')
+
+else:
+    print('o imprestimo foi negado')
