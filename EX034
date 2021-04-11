@@ -1,0 +1,9 @@
+print('calculando almento do salario do funcionario')
+
+salario = float(input('qual o salorio do funcionario? R$'))
+
+if salario > 1250.00:
+    print(f'o salario atual do funcionario é de {((10/100)*salario)+salario:.2f}R$')
+
+else:
+    print(f'o salario atual do funcionario é de{((15/100)*salario)+salario:.2f}R$')
