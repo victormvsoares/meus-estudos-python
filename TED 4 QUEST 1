@@ -1,0 +1,100 @@
+print('calculando areas')
+
+def areTri(a, b):
+    return (a * b) / 2
+
+def areCir(a):
+    return 3.14 * (a ** 2)
+
+def areQua(a, b):
+    return (a * b) ** 2
+
+while True:
+    print('Escolha uma opição')
+    print('[A] Para calcular a area de um Triangulo')
+    print('[B] Para calcular a area de um Círculo')
+    print('[C] Para calcular a area de um Quadrado')
+    print('[D] Para calcular a area do Terreno')
+    
+    op = str(input('Qual sua opição? ')).strip().upper()[0]
+    
+    while op not in 'ABCD':
+        print('Opição invalida tente novamente')
+        
+        op = str(input('Qual sua opição? ')).strip().upper()[0]
+
+    if op == 'A':
+        print('Area de um Triangulo')
+        
+        alt = float(input('Qual a altura do Triangulo? '))
+        bas = float(input('qual a base do Triangulo? '))
+        
+        print(f'A area do Tiangulo é {areTri(alt, bas):.2f}')
+        
+        con = str(input('você quer continuar? S/N ')).strip().upper()[0]
+        
+        while con not in 'SN':
+            print('Opição invalida tente novamente')
+            
+            con = str(input('você quer continuar? S/N ')).strip().upper()[0]
+            
+        if con == 'N':
+            break
+
+    if op == 'B':
+        print('Area de Círculo')
+        
+        rai = float(input('Qual a Círculo? '))
+        
+        print(f'A area do Círculo é {areCir(rai):.2f}')
+        
+        con = str(input('você quer continuar? S/N ')).strip().upper()[0]
+        
+        while con not in 'SN':
+            print('Opição invalida tente novamente')
+            
+            con = str(input('você quer continuar? S/N ')).strip().upper()[0]
+            
+        if con == 'N':
+            break
+
+    if op == 'C':
+        print('Area de um Quadrado')
+        
+        alt = float(input('Qual a altura do Quadrado? '))
+        bas = float(input('qual a base do Quadrado? '))
+        
+        print(f'A area do Quadrado é {areQua(alt, bas):.2f}')
+        
+        con = str(input('você quer continuar? S/N ')).strip().upper()[0]
+        
+        while con not in 'SN':
+            print('Opição invalida tente novamente')
+            
+            con = str(input('você quer continuar? S/N ')).strip().upper()[0]
+            
+        if con == 'N':
+            break
+
+    if op == 'D':
+        print('Area do Terreno')
+        
+        alt = float(input('Qual a altura do Quadrado? '))
+        bas = float(input('qual a base do Quadrado? '))
+        rai = float(input('Qual a Círculo? '))
+        altt = float(input('Qual a altura do Triangulo? '))
+        bast = float(input('qual a base do Triangulo? '))
+        
+        print(f'A area do Terreno é {areQua(alt, bas)+(areCir(rai)*2)+areTri(altt, bast):.2f}')
+        
+        con = str(input('você quer continuar? S/N ')).strip().upper()[0]
+        
+        while con not in 'SN':
+            print('Opição invalida tente novamente')
+            
+            con = str(input('você quer continuar? S/N ')).strip().upper()[0]
+            
+        if con == 'N':
+            break
+
+print('Fim da operação')
