@@ -1,0 +1,45 @@
+fim = 0
+
+num1 = int(input('Digite um numero'))
+
+num2 = int(input('Digite um numero'))
+
+print('=--=' * 20)
+print('Escolha uma operação')
+
+while fim != 1:
+    
+    print('=--=' * 20)
+    print('[1] Soma')
+    print('[2] Subitração')
+    print('[3] Multiplicação')
+    print('[4] Divisão')
+    print('[5] Novos numeros')
+    print('[6] Sair programa')
+    print('=--=' * 20)
+    opt = int(input('Qual a seu opição? '))
+    print('=--=' * 20)
+    
+    if opt == 1:
+        print(f'A soma do numero {num1} com numero {num2} é igual a {num1 + num2}')
+        
+    elif opt == 2:
+        print(f'A subitração do numero {num1} com numero {num2} é igual a {num1 - num2}')
+        
+    elif opt == 3:
+        print(f'A multiplicação do numero {num1} com numero {num2} é igual a {num1 * num2}')
+        
+    elif opt == 4:
+        print(f'A divisão do numero {num1} com numero {num2} é igual a {num1 / num2}')
+        
+    elif opt == 5:
+        num1 = int(input('Digite um numero'))
+        num2 = int(input('Digite um numero'))
+        
+    elif opt == 5:
+        print('Finalizado')
+        
+        fim += 1
+        
+    else:
+        print('Opção invalida tente novamente')
