@@ -1,0 +1,14 @@
+valores = [-3, 9, 12, -34, -2, 20, 10]
+soma = 0
+quantNumNeg = 0
+
+for i in valores:
+    
+    if i > 0:
+        soma += i
+        
+    else:
+        quantNumNeg += 1
+        
+print(f'A soma dos valores positivos é: {soma}')
+print(f'A quantidade de valores negativos é: {quantNumNeg}')
