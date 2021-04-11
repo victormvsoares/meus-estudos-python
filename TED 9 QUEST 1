@@ -1,0 +1,16 @@
+minhaMatriz = [[-2, 6, 78],[30,-33, 2], [-3,-5,-9]]
+contp = 0
+contn = 0
+
+for i in minhaMatriz:
+    
+    for e in i :
+        
+        if e > 0:
+            contp += 1
+            
+        if e < 0 :
+            contn += 1
+            
+print(f'minha matriz tem {contp} numeros positivos')
+print(f'minha matriz tem {contn} numeros positivos')
