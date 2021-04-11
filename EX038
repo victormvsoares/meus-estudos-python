@@ -1,0 +1,13 @@
+print('---MAIOR MENOR OU IGUAL?---')
+
+numero1 = int(input('\nDigite um numero: '))
+numero2 = int(input('\nDigite um segundo numero: '))
+
+if numero1 > numero2:
+    print(f'\n O numero {numero1} é maior que o numero {numero2}')
+
+elif numero2 > numero1:
+    print(f'\nO numero {numero2} é maior que o numero {numero1}')
+
+else:
+    print(f'\nOs numeros {numero1} e {numero2} são iguais')
