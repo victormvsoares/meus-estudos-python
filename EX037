@@ -1,0 +1,23 @@
+print('\n---CONVERTENDO NUMEROS---')
+
+numero = int(input('\nDigite um numero inteiro qualquer'))
+
+print('''\nEscolha um metodo 
+
+[1] para BINARIO
+[2] para OCTAL
+[3] para HEXADECIMAL''')
+
+metodo = int(input('\nSua opição:'))
+
+if metodo == 1:
+    print(f'\nO numero {numero} convertido para BINARIO é igual a {bin(numero)[2:]}')
+
+elif metodo == 2:
+    print(f'\nO numero {numero} convertido para OCTAL é igula a {oct(numero)[2:]}')
+
+elif metodo == 3:
+    print(f'\nO numero {numero} convertdo para HEXADECIMAL é igual a {hex(numero)[2:]}')
+
+else:
+    print('\nopição invalida tente nonamente')
