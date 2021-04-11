@@ -1,0 +1,9 @@
+segmento1 = float(input('qual o primeiro seguimento? '))
+segmento2 = float(input('qual o segundo segmento? '))
+segmento3 = float(input('qul o terseiro segmento'))
+
+if segmento1 < segmento2 + segmento3 and segmento2 < segmento1 + segmento3 and segmento3 < segmento1 + segmento2:
+    print('os segmento acima PODEM forma um triangulo')
+
+else:
+    print('os segmento acima NÃO PODEM forma um triagulo')
